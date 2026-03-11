@@ -1,0 +1,41 @@
+# 寻道大千 (Xundao Daqian) 游戏设定集 & 风格指南
+
+> **系统提示**：此文件定义了生成的**内容风格**。所有生成的 Prompt 必须严格遵守以下视觉和逻辑约束。
+
+## 1. 核心视觉风格 (Art Style - The "Ink" Look)
+所有的画面必须呈现为**中国水墨风格**，严禁写实或 3D 渲染。
+*   **Style Keywords**: `Chinese ink wash painting style`, `traditional oriental aesthetics`, `flat illustration`, `cutout animation vibe`, `minimalist background`.
+*   **Color Palette**: `Ink black`, `Rice paper white`, `Golden accents` (for effects), `Muted earth tones`.
+*   **Negative Prompt**: `3D, realistic, photorealistic, volumetric lighting, unreal engine, cgi, modern clothing`.
+
+## 2. 角色原型 (Character Archetypes)
+*   **The Cultivator (主角)**: Usually an anthropomorphic animal (Pig/Monkey/Bird).
+    *   *Look*: Cute but fierce, holding a giant axe or weapon, wearing traditional Taoist robes.
+*   **The Spirit Beast (灵兽)**: Floats behind or beside the protagonist.
+    *   *Examples*: `Glowing Fox`, `Qilin`, `Giant Bee`.
+*   **The Enemy (敌对)**: Usually larger, menacing mythical creatures (Dragon, Tiger, Demon King).
+
+## 3. 战斗机制与特效 (Combat Mechanics)
+《寻道大千》的战斗是**回合制 (Turn-based)** 且带有强烈的**数值反馈**。
+
+*   **普通攻击 (Normal Attack)**:
+    *   *Action*: Character swings weapon (Axe).
+    *   *VFX*: White/Black ink trail (`ink slash effect`).
+*   **暴击 (Critical Hit)**:
+    *   *Action*: Heavy impact, screen shake.
+    *   *VFX*: **Bold Golden/Red Numbers** exploding, `bright flash`, `shockwave`.
+*   **闪避 (Dodge)**:
+    *   *Action*: Character shifts sideways instantly or becomes transparent.
+    *   *VFX*: `Ghostly afterimage`, `blur effect`.
+*   **反击 (Counterattack)**:
+    *   *Action*: Block and immediate strike back.
+    *   *VFX*: `Metallic clash sparks`.
+
+## 4. 场景设定 (Environments)
+*   **The Divine Tree (神树)**: A giant, ancient tree root or branch (often present in UI).
+*   **Combat Backgrounds**: `Misty mountains`, `Bamboo forest`, `Cloud sea`. Backgrounds should be `faded` and `less detailed` to make characters pop.
+
+## 5. Agent 指令修正 (Director's Notes)
+*   **不要过度动态**：动作要干脆利落（Snappy），不要那种丝滑的 60fps 3D 动画感，要有一种“定格动画”或“皮影戏”的韵味。
+*   **强调特效**：因为画风简单，所以“刀光”、“剑气”、“爆炸”的粒子特效要夸张。
+*   **视角**：通常是**侧视 (Side Scroll)** 或 **45度角 (Isometric)**，模仿游戏视角。
