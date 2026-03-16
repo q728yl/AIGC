@@ -46,4 +46,13 @@ fi
 # 激活环境并运行
 echo "🚀 在 '$ENV_NAME' 环境中启动 Seedance Agent..."
 conda activate "$ENV_NAME"
-python3 seedance_project/director_agent.py
+
+# 确保使用环境内的 python
+PYTHON_EXEC="$(which python3)"
+echo "🐍 使用 Python: $PYTHON_EXEC"
+
+# 自动补全依赖 (防止环境不一致导致的 ModuleNotFound)
+echo "📦 检查核心依赖..."
+"$PYTHON_EXEC" -m pip install requests python-dotenv openai rembg > /dev/null
+
+"$PYTHON_EXEC" seedance_project/director_agent.py

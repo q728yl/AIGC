@@ -36,7 +36,35 @@ class AssetGenerator:
 
     def generate_image(self, prompt, style_guide, filename_hint="generated", ref_image_path=None):
         """调用 GPT-Image-1.5 绘图，修正二进制流传递问题"""
-        full_prompt = f"Style Reference: {style_guide}\n\nTask: {prompt}".strip()
+        
+        # --- 核心优化：注入 Sprite Sheet 或 UI 强制指令 ---
+        is_ui = any(k in prompt.lower() for k in ["ui", "hud", "bar", "text", "number", "damage", "icon"])
+        is_static_bg = "background" in prompt.lower()
+        
+        format_instruction = ""
+        
+        if is_ui:
+            format_instruction = """
+FORMAT REQUIREMENT (GAME UI):
+- Generate a FLAT, 2D Game UI Element.
+- Frontal view, NO perspective distortion.
+- Isolated on a plain background (ready for removal).
+- Style: High-quality game interface art.
+"""
+            # 如果是 UI 动画（如飘字），也要求序列帧
+            if "anim" in prompt.lower() or "sequence" in prompt.lower():
+                format_instruction += "- Layout: HORIZONTAL SPRITE SHEET (3 frames showing start->peak->fade)."
+
+        elif not is_static_bg:
+            format_instruction = """
+FORMAT REQUIREMENT (SPRITE):
+- Generate a HORIZONTAL SPRITE SHEET (Grid View).
+- Show 3 distinct keyframes of the action: [Preparation] -> [Impact/Action] -> [Follow-through].
+- Ensure consistent character details across all frames.
+- Isolated on a clean background.
+"""
+        
+        full_prompt = f"Style Reference: {style_guide}\n\nTask: {prompt}\n{format_instruction}".strip()
         print(f"🎨 画师({MODEL_ARTIST}) 正在绘制: {prompt[:30]}...")
         
         try:
@@ -122,13 +150,21 @@ class SeedanceDirector:
         Visual Style: {self.style_dna}
         
         Analyze the user request and decide what SUPPLEMENTARY assets are needed.
-        IMPORTANT: Limit your request to a MAXIMUM of 6 key assets to avoid overwhelming the scene.
+        IMPORTANT: Limit your request to a MAXIMUM of 6 key assets.
+        
+        ## THINKING DYNAMICALLY (SPRITE SHEETS & UI)
+        - **Characters**: Ask for "action sequences" (e.g., idle, attack, hit).
+        - **VFX**: Ask for "VFX sequences" (e.g., slash trail, explosion).
+        - **UI/HUD**: Explicitly ask for **"Game UI elements"**.
+          - Examples: "-9999 Critical Hit number", "HP Bar frame", "Victory Text".
+          - Specify if it should be floating (animated) or fixed (static).
         
         Output JSON:
         {{
-            "thought": "Your reasoning...",
+            "thought": "Reasoning...",
             "missing_assets": [
-                {{"filename_hint": "short_name", "description": "Visual description for the artist."}}
+                {{"filename_hint": "enemy_attack_sheet", "description": "A horizontal sprite sheet of the enemy performing a heavy slash attack (3 frames)."}},
+                {{"filename_hint": "crit_damage_ui", "description": "Game UI asset: A bright red '-9999' critical damage number. Isolated, bold font."}}
             ]
         }}
         """
@@ -146,26 +182,28 @@ class SeedanceDirector:
         
         system_prompt = f"""
 You are the Seedance Creative Director. 
-Your goal: Write the FINAL VIDEO PROMPT that orchestrates the provided assets into a cohesive scene.
+Your goal: Write the FINAL VIDEO PROMPT using a **TIMELINE STRUCTURE**.
 
-## ASSET MANIFEST (CRITICAL)
-1. **First Frame (Start Here)**: @{ref_filename}
-2. **Newly Generated Assets (MUST USE)**: {json.dumps(new_assets)}
-3. **Other Available Assets**: {json.dumps(all_assets)}
+## ASSET MANIFEST
+1. **First Frame**: @{ref_filename}
+2. **New Assets**: {json.dumps(new_assets)}
+3. **Library**: {json.dumps(all_assets)}
 
-## PROMPT WRITING RULES
-1. **Start with**: "First Frame: @{ref_filename}, ..."
-2. **Cite Assets**: When describing an object, action, or effect, you **MUST** append the specific filename using the '@' symbol.
-   - ❌ Bad: "The hero attacks the enemy with magic."
-   - ✅ Good: "The hero attacks the @{new_assets[0] if new_assets else 'enemy.png'} using @{new_assets[1] if len(new_assets)>1 else 'effect.png'}."
-3. **Completeness**: Ensure ALL "Newly Generated Assets" are referenced in the prompt.
+## PROMPT RULES (TIMELINE & LAYERS)
+1. **Start with**: "First Frame: @{ref_filename}..."
+2. **Timeline Format**: Use `[00s-05s]` style to describe the sequence of events.
+3. **Layering**: Explicitly state where elements appear.
+   - **(Background Layer)**: Scene changes.
+   - **(Action Layer)**: Character movements using @sprite_sheets.
+   - **(VFX Layer)**: Magic/Explosions overlay using @vfx_assets.
+   - **(UI Layer)**: Floating numbers, fixed bars using @ui_assets.
 
 ## Output JSON
 {{
-    "thought": "How I will combine these assets...",
-    "selected_assets": ["list", "of", "all", "filenames", "used"],
-    "prompt_en": "The final detailed prompt string with @ references.",
-    "prompt_zh": "中文版 Prompt，同样需要保留 @文件名 引用格式。"
+    "thought": "Planning the timeline...",
+    "selected_assets": ["list", "of", "filenames"],
+    "prompt_en": "First Frame: @{ref_filename}. [00s-02s] (Action Layer) The hero charges up... [02s-04s] (UI Layer) A critical hit number @damage.png pops up...",
+    "prompt_zh": "中文版时间轴剧本..."
 }}
 """
         response = client.chat.completions.create(
