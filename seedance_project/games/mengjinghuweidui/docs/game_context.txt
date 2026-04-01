@@ -1,0 +1,43 @@
+# 梦境护卫队 游戏设定集 & 风格指南
+
+> 系统提示：此文件定义《梦境护卫队》的专属内容风格。所有生成的素材规划、分镜脚本、视频 Prompt 与补充资产，都必须在遵守共享 `seedance_guide.txt` 的前提下，优先贴合本游戏“魔性搞笑、自由改技能塔防、Roguelike 割草解压”的核心体验。
+
+## 1. 核心视觉风格 (Art Style - Quirky Cartoon Meme Defense)
+《梦境护卫队》采用魔性、搞笑且偏抽象的卡通画风。主打轻松解压，通过夸张的表情包式怪物和花里胡哨的特效组合带来强烈的欢乐感与爽快感。绝非严肃写实的暗黑风格。
+
+- Style Keywords: `quirky cartoon style`, `meme-like character design`, `colorful 2D/3D hybrid stylized`, `exaggerated funny animation`, `chaotic but readable screen`, `stress-relief casual game`
+- Visual Tone: 魔性、搞笑、欢乐、抽象、高饱和度、轻松解压
+- Color Palette: 丰富多彩的糖果色与亮色调、绚丽的技能光效、搞笑的 UI 弹字
+- Negative Direction: `realistic`, `dark fantasy`, `grimdark`, `serious`, `horror`, `low saturation`, `boring traditional fantasy`
+
+## 2. 角色原型 (Character Archetypes)
+- 梦灵 / 守卫 (Dream Spirits / Defenders): 玩家部署的塔防英雄，造型可能搞怪、脑洞大开，或者融入各种网络热梗（如代言人付航等抽象形象）。拥有各种出其不意的攻击动作。
+- 梦魇怪物 (Nightmare Monsters): 各种“抽象”和“滑稽”的魔物，长着表情包般的脸，带有戏谑和恶搞的特质。
+- 统一视觉特征 (Shared Visual Trait): 角色设计突出“不按套路出牌”的脑洞，比例夸张，动作滑稽，辨识度高。
+
+## 3. 战斗机制与视觉反馈 (Combat & Roguelike Feedback)
+作为一款融合 Roguelike 和割草元素的塔防游戏，其爽点在于满屏特效和荒诞的技能组合。
+
+- 割草塔防 (Lawn-mowing Defense): 怪物如潮水般涌来，防守方通过夸张的火力进行大面积清场，强调视觉上的割草解压感。
+- 魔性技能 (Quirky Skills): 技能特效脑洞极大（如扔拖鞋、砸表情包、发大招等“不合理但很爽”的攻击方式）。
+- 技能变异 (Skill Mutation/Roguelike): 游戏强调“自由改技能”，因此可以展现技能在升级或变异后（如变得巨大、数量变多、带上五颜六色的离谱特效）的视觉炸屏感。
+- 伤害炸屏与击飞 (Damage Spam & Knockback): 怪物被击败时应有搞笑的击飞动作、满屏跳动的伤害数字、掉落金币/盲盒等，突出爽快感。
+
+## 4. 镜头语言与构图 (Camera & Composition)
+- 优先采用塔防游戏典型的 `isometric view` (等距视角)、`top-down battle angle` 或 `horizontal lane defense layout`，确保能看到防守阵线和怪海的对冲。
+- 镜头保持相对稳定，让玩家能够清晰看到整个战局的混乱与欢乐。
+- 关键大招或技能变异时，可加入轻微的震屏或聚焦特写，但不破坏整体塔防的全局感。
+
+## 5. 场景设定 (Stages)
+- 场景围绕“多元宇宙”与“梦境”展开，可能是荒诞的卧室、五彩斑斓的游乐场，或者是各种被扭曲的日常环境。
+- 背景明快鲜艳，带有一点童话或疯狂的质感，不能抢了怪海和魔性技能的风头。
+
+## 6. 材质与画质要求 (Material & Quality)
+- 保持高质量的卡通渲染质感或鲜亮的 2D 骨骼动画感，色彩干净，边缘清晰。
+- 技能特效尽管花里胡哨，但需要保证战斗的可读性，不能变成一团糊。
+- 突出表情包怪物脸部的滑稽神态，表情细节要清晰可见。
+
+## 7. Director 使用说明 (Director Notes)
+- 必须优先体现“消灭EMO、打败不开心”的情绪主旨，战斗氛围是欢乐解压的，绝不能有紧张压抑的史诗战争感。
+- 若用户描述不充分，优先补全：滑稽的怪物潮、脑洞大开的攻击方式、满屏割草的伤害数字、变异升级后的夸张特效。
+- 避免把本游戏写成正统严肃的传统塔防，重点在于“抽象、魔性、自由改技能的割草爽感”。

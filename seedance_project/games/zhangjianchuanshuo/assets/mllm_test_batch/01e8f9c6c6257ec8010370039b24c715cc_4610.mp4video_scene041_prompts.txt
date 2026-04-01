@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A dynamic scene with a character casting a skill, featuring swirling purple light effects and a burst of yellow energy upon impact. The background is a plain black, emphasizing the glowing effects. The skill progresses from a forming purple circle to a bright explosion of purple and yellow particles, with high contrast and vivid colors.
+
+========================================
+
+【整体风格】: 整体风格为高对比度的紫色和黄色光效，伴随旋转和爆发的粒子效果。
+
+【Wind-up】 (帧 6)
+理由: 此帧显示了技能的准备阶段，紫色光圈开始形成，预示着技能的即将释放。
+提示词/特征描述: 紫色光圈开始在角色周围形成，光效呈现出旋转的动态效果，预示着技能的准备。
+
+【Release】 (帧 12)
+理由: 此帧显示技能的释放，紫色光效明显增强，显示出技能的施放动作。
+提示词/特征描述: 紫色光效增强，光圈扩大，粒子效果密集，显示出技能的施放动作。
+
+【Impact】 (帧 78)
+理由: 此帧显示技能的命中效果，黄色和紫色的光效爆发，显示出技能的冲击力。
+提示词/特征描述: 黄色和紫色光效爆发，伴随高亮的数字显示，粒子效果四散，显示出技能的冲击力。
+
+【Dissipation】 (帧 84)
+理由: 此帧显示技能的收尾阶段，光效逐渐消散，技能效果结束。
+提示词/特征描述: 光效逐渐消散，黄色光柱逐渐减弱，粒子效果减少，显示出技能的结束。
+

@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A dynamic scene with a character enveloped in a swirling purple aura and orange flames, casting a powerful skill. The energy bursts into a fiery orange vortex, with bright lines extending outward. The impact is marked by a chaotic explosion of orange and yellow energy, with damage numbers visible. The scene concludes with dissipating flames and purple rings, set against a dark, pure color background.
+
+========================================
+
+【整体风格】: The skill effect is characterized by vibrant orange and purple hues, with dynamic swirling flames and energy bursts, creating a high-intensity visual impact.
+
+【Wind-up】 (帧 2)
+理由: This frame shows the character Momo surrounded by a purple aura with orange flames, indicating the beginning of a skill charge-up.
+提示词/特征描述: The character Momo is enveloped in a purple aura with swirling orange flames, suggesting the initiation of a skill. The flames are dynamic and concentrated around the character, indicating a build-up of energy.
+
+【Release】 (帧 14)
+理由: The frame shows a significant burst of orange energy around Momo, indicating the release of the skill.
+提示词/特征描述: A large, fiery orange vortex surrounds Momo, with bright energy lines extending outward. This suggests the skill is being actively cast, with high energy and intensity.
+
+【Impact】 (帧 20)
+理由: This frame shows the culmination of the skill with a bright explosion and damage numbers, indicating the impact phase.
+提示词/特征描述: A bright explosion of orange and yellow energy with visible damage numbers. The energy is chaotic and expansive, indicating the skill's impact on the target.
+
+【Dissipation】 (帧 24)
+理由: The frame shows the aftermath of the skill with dissipating energy and lingering effects.
+提示词/特征描述: The energy begins to dissipate, with orange flames and purple rings fading. The scene shows residual energy effects, indicating the skill's conclusion.
+

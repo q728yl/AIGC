@@ -1,0 +1,43 @@
+# 永远的蔚蓝星球 游戏设定集 & 风格指南
+
+> 系统提示：此文件定义《永远的蔚蓝星球》的专属内容风格。所有生成的素材规划、分镜脚本、视频 Prompt 与补充资产，都必须在遵守共享 `seedance_guide.txt` 的前提下，优先贴合本游戏“竖屏 Q 萌、肉鸽合成塔防、弹幕射击与休闲割草”的核心体验。
+
+## 1. 核心视觉风格 (Art Style - Cute Casual Defense & Bullet Hell)
+《永远的蔚蓝星球》采用 Q 萌卡通画风。游戏融合了塔防、合成与轻度弹幕射击元素，画面表现强调竖屏下的局内动态变化（如合成升级）以及割草时的特效华丽度。
+
+- Style Keywords: `cute stylized cartoon`, `vertical screen mobile layout`, `merge-2 defense`, `casual roguelike`, `bullet hell elements`, `colorful sci-fi/fantasy mix`
+- Visual Tone: 萌系、休闲、明快、治愈且富有爽快感
+- Color Palette: 蔚蓝星球主题的明亮色调（蓝、绿、白），角色技能的高亮色彩，怪物清晰的轮廓色
+- Negative Direction: `dark fantasy`, `realistic military`, `gritty`, `heavy hardcore strategy`, `complex 3D UI`, `horror`
+
+## 2. 角色原型 (Character Archetypes)
+- 守护者 / 英雄 (Guardians/Heroes): 玩家招募的拥有特殊能力的萌系英雄，分为不同品质。武器/坐骑有搞怪或可爱的幻形（如“学累了鸭”武器、“瞌睡小飞象”坐骑等）。
+- 邪恶哥布林与魔物 (Goblins & Monsters): 入侵星球的敌人，包括哥布林、火焰魔龙等。造型圆润卡通，即使是反派也带有萌感。
+- 统一视觉特征 (Shared Visual Trait): 角色设计偏向 Q 版大头身比或圆润造型，武器和坐骑设计脑洞大开，带有极强的收集感和趣味性。
+
+## 3. 战斗机制与视觉反馈 (Combat & Merge Feedback)
+本游戏的核心差异化在于“英雄 2 合 1”与“局内 3 重随机（随机召唤、随机搭配、随机合成）”，视觉上必须突出合成进化的爽感。
+
+- 合成进化 (Merge Evolution): 两个相同的英雄合成后，视觉上应有明显的“升级光效”、“模型进化”或“特效增强”的反馈。
+- 弹幕射击 (Bullet Hell): 英雄释放的攻击带有弹幕射击的爽快感，特效华丽但不过分遮挡视野。
+- 割草清场 (Mob Clear): 技能觉醒或大招释放时，大片哥布林被击败，伴随掉落反馈和爽快的清场特效。
+- 坐骑与武器特技 (Mounts & Weapons): 比如小飞象释放彩烟减速怪物、特色武器幻形的专属攻击动画，这些是重要的视觉记忆点。
+
+## 4. 镜头语言与构图 (Camera & Composition)
+- 必须严格遵循 `vertical screen tower defense layout`（竖屏塔防布局）或 `top-down vertical shooter angle`（竖版俯视射击视角）。
+- 镜头保持固定俯视或微小跟随，重点展示下方的英雄防线与上方涌来的怪物潮。
+- UI 布局需留出竖屏的上下空间，底部通常为合成与召唤区，中部为防线，上部为怪物出生区。
+
+## 5. 场景设定 (Environments)
+- 场景围绕“蔚蓝星球”的各个地貌展开，如奇幻森林、洞窟、星游奇境等。
+- 场景色彩明亮治愈，地面纹理清晰，不妨碍识别地上的英雄、弹幕和怪物。
+
+## 6. 材质与画质要求 (Material & Quality)
+- 2D 或高品质 2.5D 卡通渲染，边缘清晰。
+- 弹幕和技能光效（如彩烟、冰冻、爆炸）需具备良好的半透明和发光混合模式（Bloom），保证满屏弹幕时的视觉舒适度。
+- 怪物受击应有明显的受击闪白（Hit Flash）和弹飞/消散动画。
+
+## 7. Director 使用说明 (Director Notes)
+- 脚本规划必须突出“局内随机合成 -> 技能进化 -> 爽快割草清场”的玩法循环。
+- 在描述动作时，增加对搞怪武器幻形和可爱坐骑技能的描述（如乘坐小飞象释放彩烟）。
+- 强调竖屏布局下的弹幕防守感，避免写成横版卷轴或 3D 自由视角的 RPG。

@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A magical skill effect with blue and yellow glowing lights, featuring a concentrated black energy orb and a radiant yellow explosion. The scene is set against a pure black background, with high-density particles and electric sparks, capturing a high-contrast magical style.
+
+========================================
+
+【整体风格】: 技能特效以蓝色和黄色为主，具有强烈的光效和爆炸效果，整体风格偏向于高对比度的魔法效果。
+
+【Wind-up】 (帧 2)
+理由: 该帧显示角色在准备施法，周围有蓝色和紫色的光效，表明技能的起手阶段。
+提示词/特征描述: 角色周围出现蓝色和紫色的光效，光效呈现出环绕的形状，密度较高，显示出技能的准备状态。
+
+【Release】 (帧 4)
+理由: 该帧显示技能的释放，出现了一个黑色的能量球，表明技能的释放阶段。
+提示词/特征描述: 一个黑色的能量球出现在角色前方，周围有蓝色的光效，能量球呈现出集中的形状，密度较高。
+
+【Impact】 (帧 10)
+理由: 该帧显示技能命中目标，出现了黄色的爆炸效果，表明技能的命中阶段。
+提示词/特征描述: 黄色的爆炸效果在目标位置出现，伴随着蓝色的电光，爆炸呈现出放射状，密度很高。
+
+【Dissipation】 (帧 12)
+理由: 该帧显示技能的收尾阶段，爆炸效果逐渐消散，表明技能的结束。
+提示词/特征描述: 黄色的爆炸效果开始消散，蓝色电光减弱，爆炸的放射状边缘开始模糊，密度降低。
+

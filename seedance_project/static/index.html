@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedance AI Director</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Seedance AI Director</h1>
+            <p>智能游戏视频生成与素材创作平台</p>
+        </header>
+
+        <main class="workspace">
+            <section class="card input-panel">
+                <div class="panel-header">
+                    <h2>输入区</h2>
+                    <p>选择游戏、上传参考图并输入创意指令。</p>
+                </div>
+
+                <div class="section-block">
+                    <h3>1. 选择游戏上下文</h3>
+                    <select id="gameSelect">
+                        <option value="xundaodaqian">寻道大千 (Default)</option>
+                        <!-- 动态加载其他游戏 -->
+                    </select>
+                </div>
+
+                <div class="section-block">
+                    <h3>2. 选择生成模式</h3>
+                    <div style="margin-top: 10px;">
+                        <label style="margin-right: 15px; cursor: pointer;">
+                            <input type="radio" name="pipelineMode" value="image_only" checked onchange="toggleVideoInput()">
+                            纯图生图模式 (Plan A)
+                        </label>
+                        <label style="cursor: pointer;">
+                            <input type="radio" name="pipelineMode" value="full_hybrid" onchange="toggleVideoInput()">
+                            视频参考混合模式 (Plan C)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h3>3. 上传参考图 & 参考视频</h3>
+                    <div class="upload-group">
+                        <div class="file-upload">
+                            <input type="file" id="imageInput" accept="image/*">
+                            <label for="imageInput" id="fileLabel">点击选择首图</label>
+                        </div>
+                        <img id="previewImage" alt="参考图预览" style="display: none; max-width: 100%; margin-top: 10px; border-radius: 4px;">
+                    </div>
+                    <div class="upload-group" id="videoUploadGroup" style="margin-top: 15px; display: none;">
+                        <div class="file-upload">
+                            <input type="file" id="videoInput" accept="video/mp4,video/webm">
+                            <label for="videoInput" id="videoFileLabel">点击选择参考视频 (提供后将跳过爬虫)</label>
+                        </div>
+                        <video id="previewVideo" controls style="display: none; max-width: 100%; margin-top: 10px; border-radius: 4px;"></video>
+                    </div>
+                </div>
+
+                <div class="section-block grow">
+                    <h3>4. 创意指令</h3>
+                    <textarea id="instructionInput" placeholder="例如：生成一段战斗视频，主角是一只猪妖，正在竹林里与一只螃蟹怪战斗..."></textarea>
+                </div>
+
+                <button id="generateBtn" onclick="runPipeline()">🚀 开始生成 (Run Director)</button>
+            </section>
+
+            <section class="output-panel">
+                <div class="card result-card">
+                    <h2>执行日志</h2>
+                    <div id="logs" class="log-box">等待指令...</div>
+                </div>
+
+                <div class="card result-card">
+                    <h2>生成结果</h2>
+                    <div id="resultContent" class="markdown-body">
+                        <!-- 结果将显示在这里 -->
+                    </div>
+                </div>
+
+                <div class="card result-card" id="editPromptCard" style="display: none;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h2>编辑与确认 Prompt</h2>
+                        <button id="submitSeedanceBtn" onclick="submitToSeedance()" style="width: auto; padding: 8px 16px; background: #28a745;">✈️ 确认并提交给 Seedance API</button>
+                    </div>
+                    <p style="font-size: 0.9em; color: #666;">你可以在提交给底层视频生成模型前，手动修改大模型生成的 Timeline 剧本参数（英文 Prompt）。</p>
+                    <textarea id="editPromptInput" style="min-height: 200px; margin-top: 10px; font-family: monospace;"></textarea>
+                </div>
+
+                <div class="card result-card">
+                    <h2>视频与生成结果</h2>
+                    <div id="videoGallery" class="video-gallery">
+                        <!-- 参考视频和生成视频占位 -->
+                    </div>
+                    
+                    <h2 style="margin-top: 20px;">生成素材图层</h2>
+                    <div id="assetGallery" class="gallery">
+                        <!-- 生成的图片素材 -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

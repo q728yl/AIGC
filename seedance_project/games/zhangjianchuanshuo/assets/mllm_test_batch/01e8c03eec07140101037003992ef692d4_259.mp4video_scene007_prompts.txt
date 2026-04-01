@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A character surrounded by a glowing blue aura, gathering energy. The energy peaks and releases in a burst of bright blue light, forming a large circle. The impact creates a blue explosion with damage numbers appearing above the target. The effect dissipates as the blue circle fades and energy recedes. Black background, glowing effects, vivid blue colors.
+
+========================================
+
+【整体风格】: 蓝色光效，能量聚集与爆发，光圈与粒子效果。
+
+【Wind-up】 (帧 11)
+理由: 角色开始聚集能量，周围出现光环，预示技能即将释放。
+提示词/特征描述: 角色周围出现蓝色光环，光效开始聚集，能量开始汇聚。
+
+【Release】 (帧 33)
+理由: 能量达到顶峰，角色开始释放技能，光效明显增强。
+提示词/特征描述: 角色释放出强烈的蓝色光芒，光效从角色手中爆发，形成一个光圈。
+
+【Impact】 (帧 55)
+理由: 技能命中目标，光效达到最大，伤害数值出现。
+提示词/特征描述: 蓝色光效在目标处爆炸，形成一个大的光圈，伤害数值显示在目标上方。
+
+【Dissipation】 (帧 66)
+理由: 光效开始消散，技能效果逐渐减弱。
+提示词/特征描述: 光效逐渐消散，蓝色光圈变淡，能量回落。
+

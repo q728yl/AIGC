@@ -1,0 +1,45 @@
+# 仗剑传说 (Sword Legend) 游戏设定集 & 风格指南
+
+> 系统提示：此文件定义《仗剑传说》的专属内容风格。所有生成的素材规划、分镜脚本、视频 Prompt 与补充资产，都必须在遵守共享 `seedance_guide.txt` 的前提下，优先贴合本游戏的“高魔 Q 版战斗手游”表现。
+
+## 1. 核心视觉风格 (Art Style - Fantasy Gacha Look)
+画面应呈现为精致的 Q 版 2.5D / Stylized 3D 渲染风格，具备成熟商业二次元魔幻手游质感。整体强调高饱和魔法色彩、清晰体积关系、材质高光与华丽粒子表现。
+
+- Style Keywords: `stylized 3D rendering`, `high-quality chibi character design`, `fantasy gacha game look`, `soft cel-shading`, `isometric fantasy battle scene`, `detailed fantasy textures`
+- Visual Tone: 明亮、华丽、英雄感强，不可灰暗粗粝，不可偏写实摄影
+- Color Palette: `radiant gold`, `crimson red`, `azure blue`, `deep purple`, 配合高亮白色魔法闪光
+- Negative Direction: `realistic`, `photorealistic`, `ink wash`, `gritty realism`, `drab colors`, `low poly`, `minimalist flat look`
+
+## 2. 角色与敌人原型 (Character Archetypes)
+- 主角英雄 (The Adventurer): 采用 2-3 头身的 Q 版比例，头大身小但动作有力量感。服装为华丽板甲、披风、法袍或冒险者套装，武器比例可适度夸张，如巨剑、发光法杖、圣枪。
+- 伴生单位 (Companions): 包括灵宠、召唤物、佣兵或副将，体型较小，通常悬浮或绕主角运动，用于补强画面节奏与技能层次。
+- 敌对势力 (The Abyss Legion): 以高魔幻想敌人为主，例如石像巨像、深色盔甲亡灵骑士、烈焰恶狼、深渊魔物。轮廓应清晰，具有明显阵营感和危险气场。
+
+## 3. 战斗机制与视觉反馈 (Combat & VFX)
+《仗剑传说》的重点是“高反馈、高密度粒子、高爆发表现”。每次技能释放都应有明确的前摇、爆发点和命中反馈。
+
+- 技能释放 (Skill Casting): 角色脚下常出现复杂几何魔法阵、符文环或能量纹路，随后接光柱、火球、冰棱雨、神圣爆裂等大范围属性特效。
+- 护盾表现 (Divine Shield): 角色周围可出现半透明金色六角形能量罩、圣光护膜、流动护体纹理。
+- 数值反馈 (Damage Numbers): 敌人头顶持续跳出白色普通伤害与金黄色暴击数字，数值应具备向上漂浮、缩小淡出的动态趋势。
+- 命中反馈 (Impact): 敌人受击时必须有明确的震动、后退、碎裂、击飞、破甲或爆炸反馈，避免“打中了但没反应”。
+- 节奏要求 (Rhythm): 技能爆发前可以有极短顿帧或慢动作，随后进入高速粒子喷发和强打击反馈。
+
+## 4. 镜头语言与构图 (Camera & Composition)
+- 主要视角优先采用 `isometric view` 或轻微俯视的 45 度战斗视角。
+- 可加入轻微跟随、轻微震屏、推进镜头来强化打击感，但镜头不要晃得过猛。
+- 构图上应突出中景战斗主体，前后景用来增强纵深，不要让背景喧宾夺主。
+
+## 5. 场景设定 (Environments)
+- 常见战斗环境包括遗迹地砖、悬浮森林、神秘地牢、夜色战场、神殿废墟、云海浮岛等高魔场景。
+- 背景需要具有深度感和层次关系，远景可以适当虚化或做 Bokeh 处理，以突出中景的角色和技能演出。
+- 整体色调应明亮、干净、华丽，不可脏乱灰蒙。
+
+## 6. 材质与画质要求 (Material & Quality)
+- 强调 2K 级高清质感，金属、宝石、符文、火焰、护盾都应带有明确光泽和流动感。
+- 盔甲、武器、魔法阵、火焰尾迹、能量护罩要具备“手游宣传图级别”的精致感。
+- 严禁出现粗糙贴图、低多边形质感、模糊不清的主体结构。
+
+## 7. Director 使用说明 (Director Notes)
+- 在遵循共享 `seedance_guide.txt` 的结构、镜头与物理反馈原则时，本游戏必须优先保持“Q版高魔商业手游”的美术方向。
+- 若用户描述不充分，优先补全：主角动作序列、敌人动作序列、战斗 VFX、伤害/UI 反馈、场景分层素材。
+- 最终视频脚本应突出“短时强爆发”的战斗爽感，而不是长篇慢叙事。

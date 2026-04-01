@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A high-contrast scene with a character casting a spell, featuring swirling purple energy rings and electric effects. The energy is dense and concentrated, expanding outward with a bright flash at impact, then gradually dissipating. Black background with glowing purple highlights.
+
+========================================
+
+【整体风格】: 高对比度的紫色光效，伴随旋转和电光效果。
+
+【Wind-up】 (帧 5)
+理由: 此帧显示了技能的能量聚集，紫色光环开始形成，预示着技能的准备阶段。
+提示词/特征描述: 紫色光环开始形成，光效呈现出旋转的形状，能量在角色周围聚集，光效密度较高。
+
+【Release】 (帧 10)
+理由: 此帧显示技能的释放，紫色光环扩展并伴随电光效果，表明技能的施放。
+提示词/特征描述: 紫色光环扩展，中心出现电光效果，能量向外释放，光效密度增加。
+
+【Impact】 (帧 15)
+理由: 此帧显示技能的命中，紫色光环达到最大扩展，能量集中在目标上。
+提示词/特征描述: 紫色光环达到最大扩展，中心能量集中，光效密度最高，伴随闪光效果。
+
+【Dissipation】 (帧 20)
+理由: 此帧显示技能的收尾，紫色光环开始消散，能量逐渐减弱。
+提示词/特征描述: 紫色光环开始消散，能量减弱，光效密度降低，残留的紫色光芒逐渐消失。
+

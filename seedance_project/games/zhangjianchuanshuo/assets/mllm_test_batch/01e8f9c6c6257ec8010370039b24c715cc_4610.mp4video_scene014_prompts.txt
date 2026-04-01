@@ -1,0 +1,23 @@
+【直接可用 AI 绘图 Prompt (英文)】
+A dynamic scene with a character casting a skill in a high-contrast cartoon style. The character is surrounded by swirling purple energy, releasing a bright purple and yellow beam with electric details. The impact creates a yellow explosion with sparks and damage numbers. The scene has a black background with pure color effects.
+
+========================================
+
+【整体风格】: 整体风格为高对比度的卡通渲染，光效颜色主要为紫色和黄色，具有强烈的发光效果。
+
+【Wind-up】 (帧 143)
+理由: 此帧中角色开始聚集能量，紫色光效开始出现，预示技能的准备阶段。
+提示词/特征描述: 角色周围出现紫色光效，能量聚集在角色手中，光效呈现出旋转的形状，密度较高。
+
+【Release】 (帧 154)
+理由: 此帧中角色释放技能，紫色和黄色的光效向前方扩散，显示出技能的释放阶段。
+提示词/特征描述: 紫色和黄色光效从角色手中爆发，形成一道光束，光效密集且明亮，带有电流状的细节。
+
+【Impact】 (帧 22)
+理由: 此帧显示技能命中目标，产生爆炸效果，黄色光效和数字伤害显示。
+提示词/特征描述: 黄色爆炸光效在目标位置扩散，伴随有数字伤害显示，光效呈现出火花状，密度高。
+
+【Dissipation】 (帧 33)
+理由: 此帧中爆炸后的残留效果逐渐消散，地面上有爆炸痕迹。
+提示词/特征描述: 地面上残留有爆炸痕迹，黄色光效逐渐消散，密度降低。
+

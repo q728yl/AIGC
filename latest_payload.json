@@ -1,0 +1,15 @@
+{
+  "prompt_text": "First Frame: @7e78800e35f7eaa8a2aaea96071a1ba5.png 作为首帧，严格锁定原始宣传图式的战斗截图构图：竖版布局、俯视斜角战场UI视角、中部主体、底部宣传标语、左下角紫袍吉祥物叠加层、左侧HUD、右侧角色头像列，以及由下往上的战斗流向。整体保持中国水墨风、东方传统美术、平面插画、剪纸/皮影式动态感，背景简化且不可切换场景，色彩以水墨黑、米白、灰褐和橙色/冰蓝战斗特效为主。[00s-03s] （背景层）保持原有城防走廊、石墙、蓝色发光植物、暗色岩林环境和顶部绿色巨型怪物轮廓完全不变，只加入极轻微的空间呼吸感与层次视差。（角色/动作层）下方城墙上的小型友军单位延续当前攻击节奏持续向上输出；底部中央的大型蓝发主角展示立绘保持原位，仅做轻微头发、衣摆、武器装饰晃动，不能突然位移或释放新角色技能。（特效层）沿用画面中已存在的橙色斜向弹道，使用 @orange_projectile_trail_fx_174537.png 让这一轮齐射自然完成；中央通道内已有的蓝色冰晶能量进一步压实并命中，使用 @blue_ice_crystal_impact_fx_174621.png 制造持续中的冰晶打击反馈。（UI层）使用 @floating_damage_numbers_ui_pack_174710.png 让上半区与中部继续密集飘出红、白、青色伤害数字，左侧暂停、计时、倍速、统计按钮以及底部资源/召唤/升级UI全部保持原位不变。[03s-06s] （角色/动作层）上半区敌群承接命中结果，使用 @upper_enemy_hit_reaction_sheet_174500.png 表现被击中的后仰、顿挫、轻微击退与部分单位下坠消失，动作要利落但不是3D丝滑风；顶部中心残余敌群仍维持被压制状态。（特效层）在敌群最密集处追加一次更强的暴击结算，使用 @crit_flash_shockwave_fx_174823.png 形成短促的金橙色爆闪、墨迹冲击环和清晰碰撞火花，风格必须与原图一致，不能变成科幻激光。（UI层）使用 @ui_hit_feedback_pack_174903.png 为命中区域增加短促受击反馈，高亮战区边缘与命中感；右侧中部敌方血条小幅下降；新的暴击数字叠加在旧数字上方，旧数字向上漂浮并逐渐淡出。[06s-10s] （背景层）场景继续保持原地，不切场、不转地图，只保留微弱蓝光、雾气和战场压迫感。（角色/动作层）下方守军进入持续防守态，稳定输出下一轮攻击；底部中央蓝发主角继续作为宣传展示焦点存在，不新增人物、不切换造型。（特效层）本轮橙色弹道逐渐减少，中央蓝色冰晶碎片与细小命中火花慢慢消散，上方部分敌人被清掉后，顶部区域略微变得更清晰，但仍保留下一波交战压力。（UI层）飘字数量开始减少但不完全消失，计时器、倍速、资源、召唤与升级按钮继续可见，整体状态从爆发命中自然过渡到下一轮守城交换，而不是直接跳到胜利结算。镜头保持锁定式游戏宣传截图视角，不做突兀推拉，不做跳切。最终效果要求：画面清晰、2D手游宣传动态感、水墨战斗质感、4K ultra HD、cinematic texture、rich details、no jitter，并确保 stable face without deformation、clear facial features、normal anatomical structure、natural proportions、non-stiff movement。",
+  "images": [
+    "seedance_project/games/xundaodaqian/references/7e78800e35f7eaa8a2aaea96071a1ba5.png",
+    "seedance_project/games/xundaodaqian/assets/upper_enemy_hit_reaction_sheet_174500.png",
+    "seedance_project/games/xundaodaqian/assets/orange_projectile_trail_fx_174537.png",
+    "seedance_project/games/xundaodaqian/assets/blue_ice_crystal_impact_fx_174621.png",
+    "seedance_project/games/xundaodaqian/assets/floating_damage_numbers_ui_pack_174710.png",
+    "seedance_project/games/xundaodaqian/assets/crit_flash_shockwave_fx_174823.png",
+    "seedance_project/games/xundaodaqian/assets/ui_hit_feedback_pack_174903.png"
+  ],
+  "video_url": null,
+  "duration": 10,
+  "ratio": "9:16"
+}

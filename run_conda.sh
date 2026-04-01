@@ -45,14 +45,33 @@ fi
 
 # 激活环境并运行
 echo "🚀 在 '$ENV_NAME' 环境中启动 Seedance Agent..."
+source "$CONDA_SH"
 conda activate "$ENV_NAME"
 
-# 确保使用环境内的 python
-PYTHON_EXEC="$(which python3)"
+# 强制获取 Conda 环境内的 Python 路径
+if [ -n "$CONDA_PREFIX" ]; then
+    PYTHON_EXEC="$CONDA_PREFIX/bin/python"
+else
+    # 如果 CONDA_PREFIX 未设置，尝试从 env list 获取
+    ENV_PATH=$(conda env list | grep "^$ENV_NAME " | awk '{print $NF}')
+    if [ -n "$ENV_PATH" ]; then
+        PYTHON_EXEC="$ENV_PATH/bin/python"
+    else
+        PYTHON_EXEC="$(which python3)"
+    fi
+fi
+
+# 再次验证路径是否有效，否则回退
+if [ ! -x "$PYTHON_EXEC" ]; then
+    PYTHON_EXEC="$(which python3)"
+fi
+
 echo "🐍 使用 Python: $PYTHON_EXEC"
+# 打印 SSL 版本以供调试
+"$PYTHON_EXEC" -c "import ssl; print(f'🔒 SSL Version: {ssl.OPENSSL_VERSION}')"
 
 # 自动补全依赖 (防止环境不一致导致的 ModuleNotFound)
 echo "📦 检查核心依赖..."
-"$PYTHON_EXEC" -m pip install requests python-dotenv openai rembg > /dev/null
+"$PYTHON_EXEC" -m pip install requests python-dotenv openai > /dev/null
 
-"$PYTHON_EXEC" seedance_project/director_agent.py
+"$PYTHON_EXEC" seedance_project/director_agent.py "$@"
